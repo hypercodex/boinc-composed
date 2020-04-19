@@ -20,6 +20,8 @@ cd boinc-composed
 
 # Create a docker-compose .env file with GUI RPC password
 echo "BOINC_GUI_RPC_PASSWORD=[your-password]" > .env
+echo "BOINC_REMOTE_HOST=[host-for-management]" > .env
+echo "BOINC_TZ=America/Los_Angeles" > .env
 
 # Start the container
 docker-compose up -d
