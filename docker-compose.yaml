@@ -4,6 +4,7 @@
 # Compose file for Boinc Distributed Computing Project
 # https://boinc.berkeley.edu/
 
+cpu_percent: 90
 
 version: '3.8'
 services:
@@ -23,3 +24,5 @@ services:
 
 volumes:
   bonic:
+    storage_opt:
+      size: '128G'
