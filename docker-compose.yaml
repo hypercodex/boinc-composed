@@ -4,9 +4,9 @@
 # Compose file for Boinc Distributed Computing Project
 # https://boinc.berkeley.edu/
 
-cpu_percent: 90
+memory: '28G'
 
-version: '3.8'
+version: '2.4'
 services:
   boinc:
     image: boinc/client
