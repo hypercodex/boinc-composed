@@ -9,6 +9,9 @@ version: '3.8'
 services:
   boinc:
     image: boinc/client
+    container_name: boinc
+    network_mode: host
+    pid: host
     volumes:
       - "bonic:/var/lib/boinc"
     environment:
