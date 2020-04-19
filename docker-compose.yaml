@@ -4,11 +4,12 @@
 # Compose file for Boinc Distributed Computing Project
 # https://boinc.berkeley.edu/
 
-memory: '28G'
 
-version: '2.4'
+version: "2.4"
 services:
   boinc:
+    name: boinc-client
+    mem_limit: "28G"
     image: boinc/client
     container_name: boinc
     restart: always
