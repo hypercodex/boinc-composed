@@ -25,5 +25,3 @@ services:
 
 volumes:
   bonic:
-    storage_opt:
-      size: '128G'
