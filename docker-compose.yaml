@@ -8,10 +8,9 @@
 version: "2.4"
 services:
   boinc:
-    name: boinc-client
     mem_limit: "28G"
     image: boinc/client
-    container_name: boinc
+    container_name: boinc-client
     restart: always
     network_mode: host
     pid: host
